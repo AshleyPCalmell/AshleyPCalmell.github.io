@@ -1,4 +1,6 @@
 var img;
+var img2;
+var img3;
 var initials ='AC'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 240; // off white background
@@ -7,6 +9,7 @@ function preload() {
 // preload() runs once, it may make you wait
   img = loadImage('https://ashleypcalmell.github.io/images/giphy.gif');  // cat.jpg needs to be next to this .js file
   img2 = loadImage('https://ashleypcalmell.github.io/images/cleargrass.png');
+  img3 = loadImage('https//ashleypcalmell.github.io/images/water.gif');
 }
 
 function setup() {
@@ -32,7 +35,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
  if (toolChoice == '1' ) {  //SKETCH TOOL
    
     stroke(01);
-    fill('rgb(171%171%171%)');
+    fill('rgb(171%171%171273%)');
      line(mouseX, mouseY, pmouseX, pmouseY);
     
   } else if (toolChoice == '2') { //orange sunrise background
@@ -68,7 +71,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     noStroke() 
    fill(255, 204,0);
     ellipse(mouseX, mouseY, 100, 100);
-  } else if (toolChoice == '9') {
+  } else if (toolChoice == '9') {//waterrr
 
     fill(300, 100, 0, 80);
     rect(mouseX, mouseY, 40, 40);
