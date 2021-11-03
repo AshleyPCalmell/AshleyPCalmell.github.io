@@ -7,7 +7,7 @@ var screenbg = 240; // off white background
 
 function preload() {
 // preload() runs once, it may make you wait
- img = loadImage('https//ashleypcalmell.github.io/images/water');  // cat.jpg needs to be next to this .js file
+ img = loadImage('https//ashleypcalmell.github.io/images/water.jpg');  // cat.jpg needs to be next to this .js file
   img2 = loadImage('https://ashleypcalmell.github.io/images/cleargrass.png');
   
 }
