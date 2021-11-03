@@ -1,5 +1,6 @@
 var img;
 var img2;
+var img3;
 var initials ='AC'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 240; // off white background
@@ -72,12 +73,11 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     ellipse(mouseX, mouseY, 100, 100);
   } else if (toolChoice == '9') {//REAL WATER
 
-   image(img, mouseX-50, mouseY-50, 100, 100);
+   image(img, mouseX-75, mouseY-75, 150, 150); 
    
-  } else if (toolChoice == '0') {
-    stroke(0, 0);
-    fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
+  } else if (toolChoice == '0') {//TREES
+   image(img3, mouseX-20, mouseY-20, 60, 60); 
+    
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
     
     
