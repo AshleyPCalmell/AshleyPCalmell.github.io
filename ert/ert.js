@@ -1,12 +1,17 @@
 var img;
+var img2;
+var img3;
+var img4;
 var initials ='AC'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 240; // off white background
 
 function preload() {
 // preload() runs once, it may make you wait
-  img = loadImage('https://ashleypcalmell.github.io/images/giphy.gif');  // cat.jpg needs to be next to this .js file
+   img = loadImage('https://ashleypcalmell.github.io/images/water.gif');// cat.jpg needs to be next to this .js file
   img2 = loadImage('https://ashleypcalmell.github.io/images/cleargrass.png');
+  img3 = loadImage('https://ashleypcalmell.github.io/images/tree.png');
+  img4 = loadImage('https://ashleypcalmell.github.io/images/cloud.gif');
 }
 
 function setup() {
@@ -32,8 +37,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
  if (toolChoice == '1' ) {  //SKETCH TOOL
    
     stroke(01);
-   
-    ellipse(mouseX, mouseY, 10, 10);
+    fill('rgb(171%171%171273%)');
      line(mouseX, mouseY, pmouseX, pmouseY);
     
   } else if (toolChoice == '2') { //orange sunrise background
@@ -69,17 +73,15 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     noStroke() 
    fill(255, 204,0);
     ellipse(mouseX, mouseY, 100, 100);
-  } else if (toolChoice == '9') {
+  } else if (toolChoice == '9') {//REAL WATER
 
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 40, 40);
-  } else if (toolChoice == '0') {
-    stroke(0, 0);
-    fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
-  } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img, mouseX-25, mouseY-25, 50, 50);
+   image(img, mouseX-75, mouseY-75, 150, 150); 
+   
+  } else if (toolChoice == '0') {//TREES
+   image(img3, mouseX-50, mouseY-50, 100, 100); 
     
+  } else if (toolChoice == 'g' || toolChoice == 'G') { //CLOUDS
+    image(img4, mouseX-50, mouseY-20, 100, 50);
   }
  }
  
