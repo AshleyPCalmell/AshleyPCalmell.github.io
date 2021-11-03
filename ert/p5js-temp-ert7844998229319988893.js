@@ -7,7 +7,7 @@ var screenbg = 240; // off white background
 
 function preload() {
 // preload() runs once, it may make you wait
- img = loadImage('https//ashleypcalmell.github.io/images/water.gif');  // cat.jpg needs to be next to this .js file
+ img = loadImage('https//ashleypcalmell.github.io/images/water');  // cat.jpg needs to be next to this .js file
   img2 = loadImage('https://ashleypcalmell.github.io/images/cleargrass.png');
   
 }
@@ -80,7 +80,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     fill(random(255), random(255), random(255), random(255));
     rect(mouseX, mouseY, 200, 150);
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
-    image(img, mouseX-25, mouseY-25, 50, 50);
+    
     
   }
  }
