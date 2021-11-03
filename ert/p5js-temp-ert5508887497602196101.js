@@ -9,7 +9,7 @@ function preload() {
 // preload() runs once, it may make you wait
    img = loadImage('https://ashleypcalmell.github.io/images/water.gif');// cat.jpg needs to be next to this .js file
   img2 = loadImage('https://ashleypcalmell.github.io/images/cleargrass.png');
-  
+  img3 = loadImage('https://ashleypcalmell.github.io/images/tree.png');
 }
 
 function setup() {
@@ -76,7 +76,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
    image(img, mouseX-75, mouseY-75, 150, 150); 
    
   } else if (toolChoice == '0') {//TREES
-   image(img3, mouseX-20, mouseY-20, 60, 60); 
+   image(img3, mouseX-50, mouseY-50, 100, 100); 
     
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
     
