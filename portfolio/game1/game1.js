@@ -1,6 +1,6 @@
 var ballx= 300;
 var bally= 300;
-var ballSize= 80;
+var ballSize= 70;
 var score=0;
 var gameState= "L1";
 
