@@ -19,13 +19,66 @@ body {
   background-size: 100% 100%;
 }
 </style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+
+
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
 
-<div class="fluid-container">
-<a href="https://ashleypcalmell.github.io/3Dprint.html">
-  <img src="images/3dprnt.jpg" class="img-thumbnail mx-auto d-block" alt="3d print" width="200" height="300">
+<div class="row">
+  <div class="column">
+    <a href="https://ashleypcalmell.github.io/portfolio/3Dprint.html">
+  <img src="images/3dprnt.jpg" class="img-thumbnail mx-auto d-block" alt="3d print"  style="width:300px;height:300px" >
 </a>
+  </div>
+  <div class="column">
+     <a href="https://ashleypcalmell.github.io/partygonewrong">
+  <img src="partygonewrong/doorway.jpg" class="img-thumbnail mx-auto d-block" alt="3d print"  style="width:400px;height:300px" >
+</a>
+  </div>
+  <div class="column">
+        <a href="https://ashleypcalmell.github.io/portfolio/codeart.html">
+  <img src="images/selfie.jpg" class="img-thumbnail mx-auto d-block" alt="3d print"  style="width:400px;height:300px" >
+</a>
+  </div>
+  <div class="column">
+           <a href="https://ashleypcalmell.github.io/portfolio/codeart.html">
+  <img src="images/drawingai.jpg" class="img-thumbnail mx-auto d-block" alt="3d print"  style="width:400px;height:300px" >
+</a>
+  </div>
+  <div class="column">
+              <a href="https://ashleypcalmell.github.io/portfolio/codeart.html">
+  <img src="images/fairybackground1.jpg" class="img-thumbnail mx-auto d-block" alt="3d print"  style="width:400px;height:300px" >
+</a>
+  </div>
+  <div class="column">
+                 <a href="https://ashleypcalmell.github.io/portfolio/Artricle.html">
+  <img src="images/article.jpg" class="img-thumbnail mx-auto d-block" alt="3d print"  style="width:400px;height:300px" >
+</a>
+  </div>
+</div>
+
+
+
 </div>
 
 </body>
